@@ -8,7 +8,7 @@
 
 日志储存在/${uid}.txt中
 
-features 
+features:
 
 1.多线程检测多账号
 
