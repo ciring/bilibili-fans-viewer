@@ -14,15 +14,19 @@ docker安装：
 
 2.切换到项目目录
 
-3.构建
+3.更改更新间隔（默认单位：天）
+
+main.py的77行可修改（不修改默认7天更新一次）
+
+4.构建
 
 ```shell
 docker build -t bilifans .
 ```
-4.运行
+5.运行
 
 ```shell
-docker run --name bilifans -itd --restart always -v /your_logs_path:/app -env uid=000,111,222 bilifans
+docker run --name bilifans -itd --restart always -v /your_log_path:/app/logs -e uid=000,111,222 bilifans
 #其中000，111，222为up主uid， 可添加多个，用","(英文)隔开
 ```
 
